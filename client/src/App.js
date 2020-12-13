@@ -162,7 +162,7 @@ function App() {
         })
       })
       .catch(()=>{
-        setModalMessage('You cannot place/ receive a call without granting video and audio permissions! Please change your settings to use Cuckoo.')
+        setModalMessage('¡No puede realizar / recibir una llamada sin otorgar permisos de video y audio! Cambie su configuración para usar Desucalls.')
         setModalVisible(true)
       })
     } else {
@@ -207,7 +207,7 @@ function App() {
       })
     })
     .catch(()=>{
-      setModalMessage('You cannot place/ receive a call without granting video and audio permissions! Please change your settings to use Cuckoo.')
+      setModalMessage('¡No puede realizar / recibir una llamada sin otorgar permisos de video y audio! Cambie su configuración para usar Desucalls.')
       setModalVisible(true)
     })
   }

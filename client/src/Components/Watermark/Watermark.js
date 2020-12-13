@@ -5,7 +5,7 @@ import './Watermark.css'
 function Watermark(){
     return (
         <div className="watermark">
-            <img className="logoImage" src={desucallslogo} alt="Cuckoo Logo"/>
+            <img className="logoImage" src={desucallslogo} alt="Desucalls Logo"/>
             <span className="logoText">desucalls</span>
         </div>
     )

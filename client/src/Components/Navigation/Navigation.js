@@ -12,7 +12,7 @@ const Navigation = () => {
                         <a href='/'>
                             <div className="headerLogo flex flex-row">
                                 <div className="logoImg">
-                                    <img src={desucallslogo} alt="Cuckoo Logo"/>
+                                    <img src={desucallslogo} alt="Desucalls Logo"/>
                                 </div>
                                 <div className="logoText">
                                     desucalls
