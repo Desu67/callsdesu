@@ -16,7 +16,6 @@
   --color-background: 21, 25, 34;
   --color-dark-background: 25, 33, 36;
   --grey-1: rgb(120, 144, 156);
-  --color-input-border: 228, 232, 235;
   --container-width: 60rem;
   --rounded-radius: var(--spacing-unit-xmicro);
   --site-margin: var(--spacing-unit);
@@ -197,11 +196,11 @@ body::-webkit-scrollbar {
 .form-input {
   padding: var(--spacing-unit) var(--spacing-unit-large);
   width: 100%;
-  border: 3px solid rgba(var(--color-input-border), 1);
+  border: none;
   border-radius: calc(var(--rounded-radius) * 2);
   font-weight: var(--font-weight-text);
   line-height: 1.2;
-  background-color: rgba(var(--color-background), 1);
+  background-color: rgba(20, 14, 14, 0.2);
   color: rgba(var(--color-text), 1);
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
@@ -221,7 +220,6 @@ body::-webkit-scrollbar {
 }
 
 .form-input:focus {
-  border: 3px solid var(--primary-color);
   box-shadow: 0 1px 4px #0000001a, 0 4px 12px rgba(0, 0, 0, 0.06);
   box-shadow: var(--lift-shadow);
 }
@@ -242,8 +240,8 @@ body::-webkit-scrollbar {
   font-weight: var(--font-weight-semibold);
   line-height: 1.25;
   padding: var(--spacing-unit-small);
-  background-color: var(--secondary-color);
-  color: #1f292e;
+  background-color: #202529;
+  color: aliceblue;
   border-radius: 0.25rem;
   border-radius: var(--rounded-radius);
   transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -257,7 +255,7 @@ body::-webkit-scrollbar {
 }
 
 .primaryButton:hover {
-  background-color: var(--secondary-color-hover);
+  background-color: #83ffb7c7;
 }
 
 .primaryButton:active {

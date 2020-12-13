@@ -166,7 +166,7 @@ function App() {
         setModalVisible(true)
       })
     } else {
-      setModalMessage('We think the username entered is wrong. Please check again and retry!')
+      setModalMessage('Creemos que el nombre de usuario ingresado es incorrecto. Vuelve a comprobarlo y vuelve a intentarlo.')
       setModalVisible(true)
       return
     }
