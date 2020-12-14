@@ -6,7 +6,6 @@ import {Howl} from 'howler'
 
 import Navigation from './Components/Navigation/Navigation'
 import Footer from './Components/Footer/Footer'
-import Chat from './Components/Chat/Chat'
 
 import  'rodal/lib/rodal.css'
 
@@ -56,29 +55,29 @@ function App() {
     <Navigation/>
     <main>
       <div className="u-margin-top-xxlarge u-margin-bottom-xxlarge">
-    <div className="o-wrapper-l">
-        <div className="hero flex flex-column">
-            <div>
-                <div className="welcomeText">
-                    Bienvenido
+        <div className="o-wrapper-l">
+            <div className="hero flex flex-column">
+                <div>
+                    <div className="welcomeText">
+                        Bienvenido
+                    </div>
+                    <div className="descriptionText">
+                    </div>
                 </div>
-                <div className="descriptionText">
+                <div>
+                    <div className="actionText">¿A quien quieres llamar, <span className={copied?"username highlight copied":"username highlight"} onClick={()=>{showCopiedMessage()}}>{yourID}</span>?</div>
                 </div>
-            </div>
-            <div>
-                <div className="actionText">¿A quien quieres llamar, <span className={copied?"username highlight copied":"username highlight"} onClick={()=>{showCopiedMessage()}}>{yourID}</span>?</div>
-            </div>
-            <div className="callBox flex">
-                <input type="text" placeholder="Friend ID" value={receiverID} onChange={e => setReceiverID(e.target.value)} className="form-input"/>
-                <button onClick={() => callPeer(receiverID.toLowerCase().trim())} className="primaryButton">Call</button>
-            </div>
-            <div>
-                Para llamar a tu amigo, pídele que abra desucalls en su navegador. <br/>
-                Envía tu nombre de usuario (<span className="username">{yourID}</span>) y espere su llamada o ingrese el nombre de usuario al que desea contactar y presione llamar!
+                <div className="callBox flex">
+                    <input type="text" placeholder="Friend ID" value={receiverID} onChange={e => setReceiverID(e.target.value)} className="form-input"/>
+                    <button onClick={() => callPeer(receiverID.toLowerCase().trim())} className="primaryButton">Call</button>
+                </div>
+                <div>
+                    Para llamar a tu amigo, pídele que abra desucalls en su navegador. <br/>
+                    Envía tu nombre de usuario (<span className="username">{yourID}</span>) y espere su llamada o ingrese el nombre de usuario al que desea contactar y presione llamar!
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+      </div>
     </main>
     <Footer/>
   </>
@@ -278,10 +277,49 @@ function App() {
     },1000)
   }
 
+  function moveCamUser(){
+    let userCamVideo = document.getElementById("userVideo");
+    let velocity = 50;
+    let mTop = 0;
+    let mLeft = 0;
+
+    document.addEventListener("keydown", function(e){
+      if(e.keyCode == "39"){
+        moveRight();
+      }
+      if(e.keyCode == "37"){
+        moveLeft();
+      }
+      if(e.keyCode == "38"){
+        moveUp();
+      }
+      if(e.keyCode == "40"){
+        moveDown();
+      }
+    })
+
+    function moveRight(){
+      mLeft += velocity;
+      userCamVideo.style.marginLeft = mLeft + "px";
+    }
+    function moveLeft(){
+      mLeft -= velocity;
+      userCamVideo.style.marginLeft = mLeft + "px";
+    }
+    function moveUp(){
+      mTop -= velocity;
+      userCamVideo.style.marginTop = mTop + "px";
+    }
+    function moveDown(){
+      mTop += velocity;
+      userCamVideo.style.marginTop = mTop + "px";
+    }
+  }
+
   let UserVideo;
   if (stream) {
     UserVideo = (
-      <video className="userVideo" playsInline muted ref={userVideo} autoPlay />
+      <video id="userVideo" onMouseDown={moveCamUser} className="userVideo" playsInline muted ref={userVideo} autoPlay />
     );
   }
 
@@ -294,7 +332,6 @@ function App() {
     PartnerVideo = (
       <>
         <video className="partnerVideo" playsInline ref={partnerVideo} autoPlay />
-        <Chat/>
       </>
       
     );

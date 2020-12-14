@@ -1,0 +1,2 @@
+(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[3],{131:function(e,a,t){},132:function(e,a,t){"use strict";t.r(a);var s=t(0),c=t.n(s),n=t(47),l=t.n(n);t(131);a.default=function(){return c.a.createElement("div",{className:"watermark"},c.a.createElement("img",{className:"logoImage",src:l.a,alt:"Desucalls Logo"}),c.a.createElement("span",{className:"logoText"},"desucalls"))}}}]);
+//# sourceMappingURL=3.027f6268.chunk.js.map
