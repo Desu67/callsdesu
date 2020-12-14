@@ -277,49 +277,12 @@ function App() {
     },1000)
   }
 
-  function moveCamUser(){
-    let userCamVideo = document.getElementById("userVideo");
-    let velocity = 50;
-    let mTop = 0;
-    let mLeft = 0;
-
-    document.addEventListener("keydown", function(e){
-      if(e.keyCode == "39"){
-        moveRight();
-      }
-      if(e.keyCode == "37"){
-        moveLeft();
-      }
-      if(e.keyCode == "38"){
-        moveUp();
-      }
-      if(e.keyCode == "40"){
-        moveDown();
-      }
-    })
-
-    function moveRight(){
-      mLeft += velocity;
-      userCamVideo.style.marginLeft = mLeft + "px";
-    }
-    function moveLeft(){
-      mLeft -= velocity;
-      userCamVideo.style.marginLeft = mLeft + "px";
-    }
-    function moveUp(){
-      mTop -= velocity;
-      userCamVideo.style.marginTop = mTop + "px";
-    }
-    function moveDown(){
-      mTop += velocity;
-      userCamVideo.style.marginTop = mTop + "px";
-    }
-  }
-
   let UserVideo;
   if (stream) {
     UserVideo = (
-      <video id="userVideo" onMouseDown={moveCamUser} className="userVideo" playsInline muted ref={userVideo} autoPlay />
+      <>
+        <video id="userVideo" className="userVideo" playsInline muted ref={userVideo} autoPlay />
+      </>
     );
   }
 
