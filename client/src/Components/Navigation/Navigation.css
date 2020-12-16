@@ -9,13 +9,26 @@
   align-items: center;
 }
 
-.githubStar {
+.logout {
   margin-top: var(--spacing-unit-micro);
   color: aliceblue;
 }
 
-.githubStar a {
+.logout > button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: var(--spacing-unit-small);
+  background-color: rgba(0, 0, 0, 0.4);
   color: aliceblue;
+  border-radius: 0.25rem;
+  border-radius: var(--rounded-radius);
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .headerLogoLinkWrapper {
@@ -50,29 +63,11 @@
 .logoImg img {
   height: inherit;
   width: auto;
+  transition: all 0.5s;
 }
 
-.logoText {
-  margin-left: 0.2em;
-  display: flow-root;
-  font-weight: 700;
-  font-variation-settings: "wdth" 85;
-}
-
-.logoText:before {
-  content: "";
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.2075em;
-}
-
-.logoText:after {
-  content: "";
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.2075em;
+.logoImg img:hover {
+  transform: translateX(-15px);
 }
 
 .dropShadow {

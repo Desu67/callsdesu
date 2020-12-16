@@ -1,0 +1,60 @@
+.login {
+  margin: 150px auto;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.error {
+  color: rgb(255, 44, 44);
+}
+
+.form > input {
+  border: none;
+  outline: none;
+  background-color: rgba(20, 14, 14, 0.2);
+  padding: var(--spacing-unit) var(--spacing-unit-large);
+  border-radius: calc(var(--rounded-radius) * 2);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  color: aliceblue;
+}
+
+.form > input:hover {
+  box-shadow: 0 1px 4px #0000001a, 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--lift-shadow);
+}
+
+.form > button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: var(--spacing-unit-small);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: aliceblue;
+  border-radius: 0.25rem;
+  border-radius: var(--rounded-radius);
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form > button:hover {
+  box-shadow: var(--lift-shadow);
+  background-color: var(--secondary-color-hover);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.cursor {
+  cursor: pointer;
+}

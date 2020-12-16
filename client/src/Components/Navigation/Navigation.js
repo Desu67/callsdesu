@@ -1,8 +1,9 @@
 import React from 'react'
-import desucallslogo from '../../Icons/cuckoo-logo.svg'
+import hannalogo from '../../Icons/hanna-logo.png.svg'
 import '../Navigation/Navigation.css'
 
-const Navigation = () => {
+const Navigation = (props) => {
+    const { hanleLogout } = props;
     return (
         <header className="dropShadow">
             <div className="headerWrapper">
@@ -12,17 +13,14 @@ const Navigation = () => {
                         <a href='/'>
                             <div className="headerLogo flex flex-row">
                                 <div className="logoImg">
-                                    <img src={desucallslogo} alt="Desucalls Logo"/>
-                                </div>
-                                <div className="logoText">
-                                    desucalls
+                                    <img src={hannalogo} alt="Desucalls Logo"/>
                                 </div>
                             </div>
                         </a>
                         </div>
                     </div>
-                    <div className="githubStar">
-                        <a href="https://www.instagram.com/crk667/" target="_blank" rel="noopener noreferrer">Follow me</a>
+                    <div className="logout">
+                        <button onClick={hanleLogout}>Logout</button>
                     </div>
                 </div>
             </div>
