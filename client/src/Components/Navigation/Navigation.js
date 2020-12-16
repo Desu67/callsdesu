@@ -2,8 +2,7 @@ import React from 'react'
 import hannalogo from '../../Icons/hanna-logo.png.svg'
 import '../Navigation/Navigation.css'
 
-const Navigation = (props) => {
-    const { hanleLogout } = props;
+const Navigation = () => {
     return (
         <header className="dropShadow">
             <div className="headerWrapper">
@@ -20,7 +19,7 @@ const Navigation = (props) => {
                         </div>
                     </div>
                     <div className="logout">
-                        <button onClick={hanleLogout}>Logout</button>
+                        <button>Logout</button>
                     </div>
                 </div>
             </div>

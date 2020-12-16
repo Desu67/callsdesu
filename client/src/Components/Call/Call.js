@@ -25,8 +25,7 @@ const ringtoneSound = new Howl({
 
 const Watermark = React.lazy(()=>import('../../Components/Watermark/Watermark'))
 
-function Call(props) {
-  const { hanleLogout } = props;
+function Call() {
     const [yourID, setYourID] = useState("");
     const [users, setUsers] = useState({});
     const [stream, setStream] = useState();
@@ -51,7 +50,7 @@ function Call(props) {
   
     let landingHTML=
     <>
-      <Navigation hanleLogout={hanleLogout}/>
+      <Navigation/>
       <main>
         <div className="u-margin-top-xxlarge u-margin-bottom-xxlarge">
           <div className="o-wrapper-l">
