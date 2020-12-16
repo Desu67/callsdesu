@@ -1,2 +1,0 @@
-(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[3],{131:function(e,a,t){e.exports=t.p+"static/media/cuckoo-logo.8c9e061e.svg"},132:function(e,a,t){},133:function(e,a,t){"use strict";t.r(a);var c=t(0),s=t.n(c),n=t(131),l=t.n(n);t(132);a.default=function(){return s.a.createElement("div",{className:"watermark"},s.a.createElement("img",{className:"logoImage",src:l.a,alt:"Desucalls Logo"}),s.a.createElement("span",{className:"logoText"},"desucalls"))}}}]);
-//# sourceMappingURL=3.c1932ab2.chunk.js.map

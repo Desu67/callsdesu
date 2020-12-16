@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73db71467944a423d69416eeb2207611",
+    "revision": "5982237454414de24f4a3d3085944972",
     "url": "/index.html"
   },
   {
-    "revision": "6cf64af0cdf4e4b00d05",
+    "revision": "2d71e23241edbabed95e",
     "url": "/static/css/2.190caba9.chunk.css"
   },
   {
-    "revision": "44339376233cba53e4c5",
+    "revision": "3a4355d715ed5535fa27",
     "url": "/static/css/3.42bd9434.chunk.css"
   },
   {
-    "revision": "0ab781b833fec8572077",
+    "revision": "33b7900b879c3b360072",
     "url": "/static/css/main.8e331bb8.chunk.css"
   },
   {
-    "revision": "6cf64af0cdf4e4b00d05",
-    "url": "/static/js/2.2b287557.chunk.js"
+    "revision": "2d71e23241edbabed95e",
+    "url": "/static/js/2.3f8951e4.chunk.js"
   },
   {
     "revision": "0591dc3f8979d61906bef308dafca80a",
-    "url": "/static/js/2.2b287557.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3f8951e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "44339376233cba53e4c5",
-    "url": "/static/js/3.c1932ab2.chunk.js"
+    "revision": "3a4355d715ed5535fa27",
+    "url": "/static/js/3.9e96d8e4.chunk.js"
   },
   {
-    "revision": "0ab781b833fec8572077",
-    "url": "/static/js/main.6a1bfd11.chunk.js"
+    "revision": "33b7900b879c3b360072",
+    "url": "/static/js/main.0223ad45.chunk.js"
   },
   {
-    "revision": "2ced9e7717c88f849c5a",
-    "url": "/static/js/runtime-main.96624a51.js"
+    "revision": "c7b721f5b565c926ad6f",
+    "url": "/static/js/runtime-main.305a053b.js"
   },
   {
     "revision": "85f8745d712d011a336d3f3993932bcd",
@@ -54,10 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1b1f0dc8daca05d7bb230891e4acb66b",
     "url": "/static/media/hang-up.1b1f0dc8.svg"
-  },
-  {
-    "revision": "9b9927d5b27421feb86f1bf567397544",
-    "url": "/static/media/hanna-logo.png.9b9927d5.svg"
   },
   {
     "revision": "09d0b6c27ab9d2a540058ad888032b50",
